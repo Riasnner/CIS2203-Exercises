@@ -19,7 +19,7 @@ class Phonebook{
   }
 
   Contact? _search(String number){
-    Contact? result = _contact.firstWhere((x) => x.phoneNumber == number);
+    Contact? result = _contact.firstWhere((x) => x.phoneNumber == number, orElse: () => Contact("null", "null", "null", "null"));
     return result;
   }
 
@@ -30,8 +30,6 @@ class Phonebook{
       print("Name: ${contact.firstName} ${contact.lastName}");
       print("Phone Number: ${contact.phoneNumber}");
       print("Address: ${contact.address}");
-    }else{
-      print("Contact not found!");
     }
   }
 }
