@@ -1,5 +1,5 @@
 /*********************************************************/
-CIS 2203 - Mobile Development
+CIS 2203 - Mobile Development Exercises
 Turla, Ashley Mae M.
 BSCS - 3
 /*********************************************************/
